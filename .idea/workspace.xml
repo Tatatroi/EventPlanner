@@ -4,23 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d38055a-ea34-4ec5-b89a-2e1c8319639f" name="Changes" comment="Project Structure">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/models/Event.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/models/EventUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/models/EventUserId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/models/Invitation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/models/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/models/Photo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/models/Schedule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/models/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="7d38055a-ea34-4ec5-b89a-2e1c8319639f" name="Changes" comment="Model Creation">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/EventPlannerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/EventPlannerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/models/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/model/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/models/EventUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/model/EventUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/models/EventUserId.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/model/EventUserId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/models/Invitation.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/model/Invitation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/models/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/model/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/models/Photo.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/model/Photo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/models/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/model/Schedule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/models/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/eventplanner/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -36,12 +43,12 @@
     &quot;assignee&quot;: &quot;Tatatroi&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Tatatroi/EventPlanner.git",
-    "accountId": "803bb815-64fd-4507-b265-e9f5f472db16"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Tatatroi/EventPlanner.git&quot;,
+    &quot;accountId&quot;: &quot;803bb815-64fd-4507-b265-e9f5f472db16&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -53,8 +60,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.EventPlannerApplication.executor": "Run",
     "git-widget-placeholder": "feat__ModelCreation",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -62,6 +74,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -87,6 +103,14 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
+    <configuration name="EventPlannerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="EventPlanner" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.eventplanner.EventPlannerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -107,6 +131,8 @@
       <workItem from="1761554756691" duration="6659000" />
       <workItem from="1762260067267" duration="63000" />
       <workItem from="1762507187546" duration="1460000" />
+      <workItem from="1762508681255" duration="632000" />
+      <workItem from="1762509334817" duration="2193000" />
     </task>
     <task id="LOCAL-00001" summary="Project Structure">
       <option name="closed" value="true" />
@@ -124,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761556479187</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Model Creation">
+      <option name="closed" value="true" />
+      <created>1762508843074</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1762508843074</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +166,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project Structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project Structure" />
+    <MESSAGE value="Model Creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Model Creation" />
   </component>
 </project>
